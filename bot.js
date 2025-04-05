@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // Замени 'YOUR_BOT_TOKEN' на свой токен
-const token = '7904448248:AAEYas5FZvcDMjIqIwAoP6rAbw_zHcVJF1M';
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 // Данные о ценах
